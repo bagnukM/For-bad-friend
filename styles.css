@@ -1,0 +1,118 @@
+.arrow {
+    position: absolute;
+    float: right;
+    right: 200px;
+    top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.close7 {
+    position: absolute;
+    float: right;
+    right: 200px;
+    top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.modal,
+.modal2,
+.modal3,
+.modal4,
+.modal5,
+.modal6,
+.modal7 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content,
+.modal-content2,
+.modal-content3,
+.modal-content4,
+.modal-content5,
+.modal-content6,
+.modal-content7 {
+    position: relative;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    border: 2px solid black;
+
+}
+
+
+.close,
+.close2,
+.close3,
+.close4,
+.close5,
+.close6 {
+    position: absolute;
+    float: right;
+    right: 10px;
+    top: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+    text-decoration: 0;
+    cursor: pointer;
+    color: #f70000
+}
+
+.close2:hover,
+.close2:focus {
+    text-decoration: 0;
+    cursor: pointer;
+    color: #f70000
+}
+
+.close3:hover,
+.close3:focus {
+    text-decoration: 0;
+    cursor: pointer;
+    color: #f70000
+}
+
+.close4:hover,
+.close4:focus {
+    text-decoration: 0;
+    cursor: pointer;
+    color: #f70000
+}
+
+.close5:hover,
+.close5:focus {
+    text-decoration: 0;
+    cursor: pointer;
+    color: #f70000
+}
+
+.close6:hover,
+.close6:focus {
+    text-decoration: 0;
+    cursor: pointer;
+    color: #f70000
+}
+
+.close7:hover,
+.close7:focus {
+    text-decoration: 0;
+    cursor: pointer;
+    color: #f70000
+}
