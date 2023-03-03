@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modal-content</title>
+</head>
+<body>
+    <button id="openModal">open</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Пошел нахуй!</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal2">
+        <div class="modal-content2">
+            <span class="close2">&times;</span>
+            <p>Пошел нахуй дважды!</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal3">
+        <div class="modal-content3">
+            <span class="close3">&times;</span>
+            <p>Таких уебанов как ты, еще поискать</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal4">
+        <div class="modal-content4">
+            <span class="close4">&times;</span>
+            <p>Душнила ебаная</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal5">
+        <div class="modal-content5">
+            <span class="close5">&times;</span>
+            <p>Думаешь ты самый умный, да ты чмо ебаное!</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal6">
+        <div class="modal-content6">
+            <span class="close6">&times;</span>
+            <p>Что такое? Не получяеться закрыть? Я помогу тебе </p>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal7">
+        <div class="modal-content7">
+            <span class="close7">&times;</span>
+            <p>Нажми сюда</p>
+            <p class="arrow">&#8593;</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+
+    .arrow{
+         position: absolute;
+        float: right;
+        right: 200px;
+        top: 10px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+
+    .close7{
+         position: absolute;
+        float: right;
+        right: 200px;
+        top: 10px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .modal,
+    .modal2,
+    .modal3,
+    .modal4,
+    .modal5,
+    .modal6,
+    .modal7
+
+    {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+    .modal-content,
+    .modal-content2,
+    .modal-content3,
+    .modal-content4,
+    .modal-content5,
+    .modal-content6,
+    .modal-content7
+    {
+        position: relative;
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        width: 80%;
+        border: 2px solid black;
+        
+    }
+
+
+    .close,
+    .close2,
+    .close3,
+    .close4,
+    .close5,
+    .close6
+    {
+        position: absolute;
+        float: right;
+        right: 10px;
+        top: 0;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+
+    .close:hover,
+    .close:focus{
+        text-decoration: 0;
+        cursor: pointer;
+        color:#f70000
+    }
+
+    .close2:hover,
+    .close2:focus{
+        text-decoration: 0;
+        cursor: pointer;
+        color:#f70000
+    }
+
+    .close3:hover,
+    .close3:focus{
+        text-decoration: 0;
+        cursor: pointer;
+        color:#f70000
+    }
+
+    .close4:hover,
+    .close4:focus{
+        text-decoration: 0;
+        cursor: pointer;
+        color:#f70000
+    }
+
+    .close5:hover,
+    .close5:focus{
+        text-decoration: 0;
+        cursor: pointer;
+        color:#f70000
+    }
+
+    .close6:hover,
+    .close6:focus{
+        text-decoration: 0;
+        cursor: pointer;
+        color:#f70000
+    }
+
+    .close7:hover,
+    .close7:focus{
+        text-decoration: 0;
+        cursor: pointer;
+        color:#f70000
+    }
+
+</style>
+
+<script>
+    var openBtn = document.getElementById("openModal");
+    var modal = document.getElementById("modal");
+    var closeBtn = document.getElementsByClassName("close")[0];
+
+    var modal2 = document.getElementById("modal2");
+    var closeBtn2 = document.getElementsByClassName("close2")[0];
+
+    var modal3 = document.getElementById("modal3");
+    var closeBtn3 = document.getElementsByClassName("close3")[0];
+
+    var modal4 = document.getElementById("modal4");
+    var closeBtn4 = document.getElementsByClassName("close4")[0];
+
+    var modal5 = document.getElementById("modal5");
+    var closeBtn5 = document.getElementsByClassName("close5")[0];
+
+    var modal6 = document.getElementById("modal6");
+    var closeBtn6 = document.getElementsByClassName("close6")[0];
+
+    var modal7 = document.getElementById("modal7");
+    var closeBtn7 = document.getElementsByClassName("close7")[0];
+    
+    
+    
+    
+    openBtn.onclick = function (){
+        modal.style.display = "block";
+
+    }
+    closeBtn.onclick = function () {
+        modal.style.display = "none";    
+        modal2.style.display = "block";
+
+        }
+
+    closeBtn2.onclick = function () {
+            modal2.style.display = "none";
+            modal3.style.display = "block";}
+
+    closeBtn3.onclick = function () {
+            modal3.style.display = "none";
+            modal4.style.display = "block";
+        }
+
+    closeBtn4.onclick = function () {
+            modal4.style.display = "none";
+            modal5.style.display = "block";
+        }
+
+    closeBtn5.onclick = function () {
+        modal5.style.display = "none";
+        modal6.style.display = "block";
+    }
+
+    closeBtn6.onclick = function () {
+        modal6.style.display = "none";
+        modal7.style.display = "block";
+    }
+
+    closeBtn7.onclick = function close_tab() {
+        if (confirm("Я выебал твою мамашу")){
+            window.cose();
+        }
+    }
+           
+           
+    
+
+    // window.onclick = function (event) {
+    //     if (event.target == modal) {
+    //         modal.style.display = "none";}
+
+    //     }
+</script>
